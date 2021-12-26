@@ -29,14 +29,14 @@ if(!$this->session->userdata('cart')){
                                 <tr>
                                     <td class="width30 text-right td-right-order">Khách hàng: <span class="require_symbol">* </span></td>
                                     <td>
-                                        <input type="text" class="form-control" placeholder="Họ và tên" name="name" <?php if($this->session->userdata('sessionKhachHang')) echo'readonly'?>>
+                                        <input type="text" class="form-control" placeholder="Họ và tên" name="name" <?php if($this->session->userdata('sessionKhachHang')) echo'checked'?>>
                                         <div class="error"><?php echo form_error('name')?></div>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="width30 text-right td-right-order">Email: <span class="require_symbol">* </span></td>
                                     <td>
-                                        <input type="text" class="form-control" name="<?php if($this->session->userdata('sessionKhachHang')) echo 'tv'; else echo 'email'?>" placeholder="Email" <?php if($this->session->userdata('sessionKhachHang')) echo'readonly'?>>
+                                        <input type="text" class="form-control" name="<?php if($this->session->userdata('sessionKhachHang')) echo 'tv'; else echo 'email'?>" placeholder="Email" <?php if($this->session->userdata('sessionKhachHang')) echo'checked'?>>
                                         <div class="error"><?php echo form_error('email')?></div>
                                     </td>
                                 </tr>
@@ -44,7 +44,7 @@ if(!$this->session->userdata('cart')){
                                 <tr>
                                     <td class="width30 text-right td-right-order">Số điện thoại: <span class="require_symbol">* </span></td>
                                     <td>
-                                        <input type="text"  class="form-control" placeholder="Số điện thoại" name="phone" <?php if($this->session->userdata('sessionKhachHang')) echo'readonly'?>>
+                                        <input type="text"  class="form-control" placeholder="Số điện thoại" name="phone" <?php if($this->session->userdata('sessionKhachHang')) echo'checked'?>>
                                         <div class="error"><?php echo form_error('phone')?></div>
                                     </td>
                                 </tr>
